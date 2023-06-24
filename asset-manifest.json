@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/goit-react-test/static/css/main.21af4d5d.css",
+    "main.js": "/goit-react-test/static/js/main.8736c44f.js",
+    "static/media/bg2x.png": "/goit-react-test/static/media/bg2x.92ac7be459c2a240dbba.png",
+    "static/media/bgWebp2x.webp": "/goit-react-test/static/media/bgWebp2x.d716d4eb17fa0ad3a042.webp",
+    "static/media/bgAvif2x.avif": "/goit-react-test/static/media/bgAvif2x.3fd8c3f14f9dfcc779e5.avif",
+    "static/media/bg1x.png": "/goit-react-test/static/media/bg1x.38ea3189a2c780f4bbbf.png",
+    "static/media/bgWebp1x.webp": "/goit-react-test/static/media/bgWebp1x.193dab676c0c3ca97c09.webp",
+    "static/media/Ellipse2x.png": "/goit-react-test/static/media/Ellipse2x.a51e6555f35b8eeb646d.png",
+    "static/media/EllipseAvif2x.avif": "/goit-react-test/static/media/EllipseAvif2x.863ee56f4a19d26ae568.avif",
+    "static/media/bgAvif1x.avif": "/goit-react-test/static/media/bgAvif1x.d0253ee1a59f505ceddb.avif",
+    "static/media/RectangleAvif2x.avif": "/goit-react-test/static/media/RectangleAvif2x.5fb9e532b8425b29f461.avif",
+    "static/media/EllipseWebp2x.webp": "/goit-react-test/static/media/EllipseWebp2x.b67a7f06b6ab39f311cf.webp",
+    "static/media/EllipseAvif1x.avif": "/goit-react-test/static/media/EllipseAvif1x.17a95ba4485b5d72fe16.avif",
+    "static/media/EllipseWebp1x.webp": "/goit-react-test/static/media/EllipseWebp1x.6d80f05441a9d57feb26.webp",
+    "static/media/RectangleAvif1x.avif": "/goit-react-test/static/media/RectangleAvif1x.b4bde3327e00cc33c07b.avif",
+    "static/media/RectangleWebp2x.webp": "/goit-react-test/static/media/RectangleWebp2x.4ad74efdb58b66b8d5c2.webp",
+    "static/media/LogoAvif2x.avif": "/goit-react-test/static/media/LogoAvif2x.3c8e3325c6b886e86cd1.avif",
+    "static/media/LogoAvif1x.avif": "/goit-react-test/static/media/LogoAvif1x.e088cea8a36a76c66294.avif",
+    "static/media/RectangleWebp1x.webp": "/goit-react-test/static/media/RectangleWebp1x.df94a2f6aca3405d24f1.webp",
+    "index.html": "/goit-react-test/index.html",
+    "static/media/LogoWebp2x.webp": "/goit-react-test/static/media/LogoWebp2x.dc68f3941e414aa6d0d5.webp",
+    "static/media/LogoWebp1x.webp": "/goit-react-test/static/media/LogoWebp1x.21e4d558e913b15b7b1c.webp",
+    "main.21af4d5d.css.map": "/goit-react-test/static/css/main.21af4d5d.css.map",
+    "main.8736c44f.js.map": "/goit-react-test/static/js/main.8736c44f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21af4d5d.css",
+    "static/js/main.8736c44f.js"
+  ]
+}
