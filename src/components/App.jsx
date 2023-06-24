@@ -8,26 +8,26 @@ const Tweets = lazy(() => import('pages/Tweets/Tweets'));
 export function App() {
   return (
     <>
-      <Suspense
-        fallback={
-          <Spinner
-            thickness="4px"
-            speed="0.65s"
-            emptyColor="gray.200"
-            color="purple.500"
-            size="xl"
-            display="flex"
-            m="auto"
-          />
-        }
-      >
-        <ChakraProvider>
+      <ChakraProvider>
+        <Suspense
+          fallback={
+            <Spinner
+              thickness="4px"
+              speed="0.65s"
+              emptyColor="gray.200"
+              color="purple.500"
+              size="xl"
+              display="flex"
+              m="50px auto"
+            />
+          }
+        >
           <Box
             bg="#ebd8ff"
             width="100vw"
             height="100%"
             minHeight="100vh"
-            fontFamily="Montserrat"
+            fontFamily="Montserrat, -apple-system, sans-serif"
             p="20px"
           >
             <Routes>
@@ -36,8 +36,8 @@ export function App() {
               <Route path="*" element={<Home />} />
             </Routes>
           </Box>
-        </ChakraProvider>
-      </Suspense>
+        </Suspense>
+      </ChakraProvider>
     </>
   );
 }
