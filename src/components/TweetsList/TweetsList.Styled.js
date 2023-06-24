@@ -101,6 +101,7 @@ export const ButtonFollow = styled.button`
   font-weight: 600;
   text-transform: uppercase;
   border: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -120,6 +121,7 @@ export const ButtonFollowing = styled.button`
   font-weight: 600;
   text-transform: uppercase;
   border: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -140,6 +142,7 @@ export const ButtonLoadMore = styled.button`
   text-transform: uppercase;
   border: none;
   margin: 48px auto 0px auto;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
