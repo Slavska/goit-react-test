@@ -139,7 +139,7 @@ export const ButtonLoadMore = styled.button`
   font-weight: 600;
   text-transform: uppercase;
   border: none;
-  margin: 48px auto;
+  margin: 48px auto 0px auto;
 
   &:hover,
   &:focus {

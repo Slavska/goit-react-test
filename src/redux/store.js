@@ -1,6 +1,6 @@
-import { userReducer } from './user/userSlice';
-import { configureStore } from '@reduxjs/toolkit';
+import { tweetReducer } from './tweet/tweetSlice';
 import { followSlice } from './follow/followSlice';
+import { configureStore } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
 import {
   persistStore,
@@ -25,17 +25,16 @@ const persistedFollowReducer = persistReducer(
 
 export const store = configureStore({
   reducer: {
-    user: userReducer,
+    tweets: tweetReducer,
     follow: persistedFollowReducer,
   },
-  devTools: process.env.NODE_ENV === 'development',
-  middleware(getDefaultMiddleware) {
-    return getDefaultMiddleware({
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    });
-  },
+      devTools: process.env.NODE_ENV !== 'production',
+    }),
 });
 
 export const persistor = persistStore(store);

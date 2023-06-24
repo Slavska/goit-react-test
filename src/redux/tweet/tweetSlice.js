@@ -1,30 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchUsers } from './operations';
 
-export const userSlice = createSlice({
-  name: 'user',
+export const tweetSlice = createSlice({
+  name: 'tweets',
   initialState: {
-    items: [],
+    tweets: [],
     isLoading: false,
     error: null,
     page: 1,
     perPage: 3,
-    followedUsers: [],
+    filter: 'show all',
   },
   reducers: {
     nextPage: state => {
       state.page++;
     },
-    toggleFollow: (state, { payload: userId }) => {
-      const followedUsersSet = new Set(state.followedUsers);
-
-      if (followedUsersSet.has(userId)) {
-        followedUsersSet.delete(userId);
-      } else {
-        followedUsersSet.add(userId);
-      }
-
-      state.followedUsers = Array.from(followedUsersSet);
+    setFilter: (state, { payload: filter }) => {
+      state.filter = filter;
     },
   },
   extraReducers: builder => {
@@ -32,7 +24,7 @@ export const userSlice = createSlice({
       .addCase(fetchUsers.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
-        state.items = action.payload;
+        state.tweets = action.payload;
       })
       .addMatcher(
         action => action.type.endsWith('/fulfilled'),
@@ -56,5 +48,5 @@ export const userSlice = createSlice({
   },
 });
 
-export const { nextPage, toggleFollow } = userSlice.actions;
-export const userReducer = userSlice.reducer;
+export const { nextPage, setFilter } = tweetSlice.actions;
+export const tweetReducer = tweetSlice.reducer;

@@ -1,6 +1,6 @@
 import { Head, HomeContainer, StyledLink } from './Home.Styled';
 
-export const Home = () => {
+export default function Home() {
   return (
     <>
       <Head>Welcome</Head>
@@ -9,4 +9,4 @@ export const Home = () => {
       </HomeContainer>
     </>
   );
-};
+}

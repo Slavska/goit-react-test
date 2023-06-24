@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const StyledLinkBack = styled(NavLink)`
-  margin: 20px 0 0 10px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   color: #373737;
